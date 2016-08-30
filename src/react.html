@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+</head>
+<body>
+    <div class="wrap_header">
+        <h1>MY TODO LIST</h1>
+    </div>
+    <div id="container">
+        <!-- <ol class="wrap_list">
+            <li>
+                <input type="checkbox" id="chk" class="blind chk_box"><label for="chk" class="chk_label fa fa-check-circle-o"></label>
+                <span>나의할일</span>
+                <button type="button" class="btn_del fa fa-minus-circle"><span class="blind">삭제</span></button>
+
+            </li>
+        </ol>
+        <div class="wrap_write">
+            <label for="desc_todo"><input type="text"></label>
+            <button type="button">TODO</button>
+        </div> -->
+    </div>
+<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+<!-- core firebase client -->
+<script src="https://cdn.firebase.com/libs/reactfire/1.0.0/reactfire.min.js"></script>
+<!-- react fire https://github.com/firebase/reactfire firebase react framework supported react binding for the firebase realtime database / setup : cdn or install via npm or bower -->
+
+<!-- use reference https://github.com/firebase/reactfire/blob/master/docs/quickstart.md -->
+
+<!-- use react fire
+* use few line of javascript, you can use Reactfire in React apps.
+2. create an account - first, sign up firebase account.
+3. include firebase and reactfire -> use cdn or npm ( dependencies )
+4. initialize the firebase sdk -> https://console.firebase.google.com/ -> click add webapp
+   copy snippet and paste html or script tag
+5. reactFireMixin : reactFireMixin allow us to create a one-way binding from our firebase databases to our component's this.state variable.
+-->
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyD5iciwF09BZkFfhfWxdSBDOBVU5dC1SHY",
+    authDomain: "react-842b8.firebaseapp.com",
+    databaseURL: "https://react-842b8.firebaseio.com",
+    storageBucket: "react-842b8.appspot.com"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="js/myreact.js"></script>
+</body>
+</html>
